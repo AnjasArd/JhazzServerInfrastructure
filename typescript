@@ -1,0 +1,101 @@
+Script started on 2026-07-31 10:30:48+07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="158" LINES="40"]
+[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025[00m$ cd scripts/
+[?2004l[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025/scripts[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025/scripts[00m$ ls
+[?2004lcek_validasiconf.sh  [0m[01;32mcreate_users.sh[0m  [01;34mlogs[0m
+[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025/scripts[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025/scripts[00m$ mv create_users.sh bulk_user[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Knana[Ko cek_validasiconf.sh 
+[?2004l[?2004h[?1049h[22;0;0t[1;40r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[38;73H(B[0;7m[ Reading... ](B[m[38;71H(B[0;7m[ Read 67 lines ](B[m[H(B[0;7m  GNU nano 8.7.1                                                         cek_validasiconf.sh                                                                  [1;157H(B[m[39d(B[0;7m^G(B[m Help[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^F(B[m Where Is[52G(B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[39;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40d(B[0;7m^X(B[m Exit[40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[40;120H(B[0;7mM-6(B[m Copy[40;137H(B[0;7m^B(B[m Where Was[2d[36m#!/bin/bash[4d[39m(B[mLOG[32m=[39m(B[mlogs/validation.log[6d(B[0;1m[34mmkdir[35m -p[39m(B[m logs[8d[32mexec[39m(B[m [32m>[39m(B[m [32m>([39m(B[mtee (B[0;1m[33m"$LOG"(B[0m[32m)[39m(B[m 2[32m>&[39m(B[m1[10d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"======================================="[11d[34mecho[39m(B[m (B[0;1m[33m"CEK VALIDASI KONFIGURASI TASKOPSEC 2025 "[12d[34mecho[39m(B[m (B[0;1m[33m"======================================="[14d[34mecho[15decho[39m(B[m (B[0;1m[33m"Hostname"[16d[39m(B[mhostnamectl[18d(B[0;1m[34mecho[19decho[39m(B[m (B[0;1m[33m"Apache"[20d[39m(B[msystemctl status apache2(B[0;1m[35m --no-pager[22d[34mecho[23decho[39m(B[m (B[0;1m[33m"Nginx"[24d[39m(B[msystemctl status nginx(B[0;1m[35m --no-pager[26d[34mecho[27decho[39m(B[m (B[0;1m[33m"HAProxy"[28d[39m(B[msystemctl status haproxy(B[0;1m[35m --no-pager[30d[34mecho[31decho[39m(B[m (B[0;1m[33m"SSH"[32d[39m(B[msystemctl status ssh(B[0;1m[35m --no-pager[34d[34mecho[35decho[39m(B[m (B[0;1m[33m"Audit"[36d[39m(B[msystemctl status auditd(B[0;1m[35m --no-pager[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[38d[K[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h[18d[?25l[?12l[?25h[19d[?25l[?12l[?25h[20d[?25l[?12l[?25h[21d[?25l[?12l[?25h[22d[?25l[?12l[?25h[23d[?25l[?12l[?25h[24d[?25l[?12l[?25h[25d[?25l[?12l[?25h[26d[?25l[?12l[?25h[27d[?25l[?12l[?25h[28d[?25l[?12l[?25h[29d[?25l[?12l[?25h[30d[?25l[?12l[?25h[31d[?25l[?12l[?25h[32d[?25l[?12l[?25h[33d[?25l[?12l[?25h[34d[?25l[?12l[?25h[35d[?25l[?12l[?25h[36d[?25l[?12l[?25h[37d[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H(B[0;1m[34mecho[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Rsyslog"[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1Hsystemctl status rsyslog(B[0;1m[35m --no-pager[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H(B[0;1m[34mecho[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Ports"[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1Hss -tlnp[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H(B[0;1m[34mecho[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Apache Test"[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1Hcurl http[32m:[39m(B[m//localhost[32m:[39m(B[m8028[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H(B[0;1m[34mecho[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Nginx Test"[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1Hcurl http[32m:[39m(B[m//localhost[32m:[39m(B[m8128[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H(B[0;1m[34mecho[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"HTTPS Test"[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1Hcurl(B[0;1m[35m -k[39m(B[m https[32m:[39m(B[m//localhost[32m:[39m(B[m8428[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H(B[0;1m[34mecho[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"HAProxy Validation"[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1Hhaproxy(B[0;1m[35m -c -f[39m(B[m /etc/haproxy/haproxy.cfg[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H(B[0;1m[34mecho[39m(B[m[?25l[?12l[?25h7[2;38r8[38d[2S[1;40r[36;1H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Certificate"[37d[39m(B[msudo openssl verify [32m\[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H-CAfile /root/ca/cacert.pem [32m\[39m(B[m[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H/root/ca/certs/barat.sevima.site.crt[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H[?25l[?12l[?25h7[2;38r8[38d
+[1;40r[37;1H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[34d[?25l[?12l[?25h[35d[?25l[?12l[?25h[36d[?25l[39d[J[40d[?12l[?25h[40;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025/scripts[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025/scripts[00m$ c[Kcd ..
+[?2004l[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025[00m$ tree
+[?2004l[01;34m.[0m
+├── [01;34mapache[0m
+│   ├── barat-ssl.conf
+│   ├── ports.conf
+│   └── utara.conf
+├── [01;34maudit[0m
+│   ├── audit.rules
+│   └── limits.conf
+├── [01;34mhaproxy[0m
+│   └── haproxy.cfg
+├── [01;34mlogs[0m
+├── [01;34mnginx[0m
+│   └── timur.conf
+├── [01;34mscripts[0m
+│   ├── cek_validasiconf.sh
+│   ├── [01;32mcreate_users.sh[0m
+│   └── [01;34mlogs[0m
+│       └── validation.log
+├── [01;34mssh[0m
+│   └── sshd_config
+└── typescript
+
+9 directories, 12 files
+[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025[00m$ cd logs
+[?2004l[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025/logs[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025/logs[00m$ cat validation.log
+[?2004lcat: validation.log: No such file or directory
+[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025/logs[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025/logs[00m$ cat validation.log[1P[1P[1P[1@n[1@a[1@n[1@o
+[?2004l[?2004h[?1049h[22;0;0t[1;40r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[38;74H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 8.7.1                                                           validation.log                                                                     [1;157H(B[m[39d(B[0;7m^G(B[m Help[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^F(B[m Where Is[52G(B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[39;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40d(B[0;7m^X(B[m Exit[40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[40;120H(B[0;7mM-6(B[m Copy[40;137H(B[0;7m^B(B[m Where Was[2d[?12l[?25h[?25l[38d[J[40d[?12l[?25h[40;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025/logs[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025/logs[00m$ nano validation.log[Kclear
+[?2004l[H[2J[3J[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025/logs[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025/logs[00m$ tree
+[?2004l[01;34m.[0m
+
+0 directories, 0 files
+[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025/logs[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025/logs[00m$ ls
+[?2004l[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025/logs[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025/logs[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025/logs[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025/logs[00m$ cd ..
+[?2004l[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025[00m$ cl
+[?2004lCommand 'cl' not found, but can be installed with:
+sudo apt install cl-launch
+[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/taskopsec2025[00m$ l[Ktree
+[?2004l[01;34m.[0m
+├── [01;34mapache[0m
+│   ├── barat-ssl.conf
+│   ├── ports.conf
+│   └── utara.conf
+├── [01;34maudit[0m
+│   ├── audit.rules
+│   └── limits.conf
+├── [01;34mhaproxy[0m
+│   └── haproxy.cfg
+├── [01;34mlogs[0m
+├── [01;34mnginx[0m
+│   └── timur.conf
+├── [01;34mscripts[0m
+│   ├── cek_validasiconf.sh
+│   ├── [01;32mcreate_users.sh[0m
+│   └── [01;34mlogs[0m
+│       └── validation.log
+├── [01;34mssh[0m
+│   └── sshd_config
+└── typescript
+
+9 directories, 12 files
+[?2004h]0;jhaz@jhaz: ~/makeyourwebgreatagain/taskopsec2025[01;32mjhaz@jhaz[00m:[01;34m~/makeyourwebgreatagain/tasko
