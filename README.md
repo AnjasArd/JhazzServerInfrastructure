@@ -28,16 +28,16 @@ This project simulates a production-like server environment where multiple web s
 
 ## Features
 
-- **User Management** — 1,300 provisioned Linux user accounts
-- **SSH Hardening** — Public key authentication enforced, password login disabled
-- **PKI Infrastructure** — Custom Root CA for issuing and validating internal TLS certificates
-- **Apache Virtual Host** — Isolated site configuration on a dedicated port
-- **Nginx Virtual Host** — Isolated site configuration on a dedicated port
-- **HTTPS Enforcement** — TLS-secured endpoint backed by the internal Root CA
-- **Load Balancing** — HAProxy distributing requests across Apache and Nginx backends
-- **Auditing** — `auditd` rules for tracking security-relevant system events
-- **Centralized Logging** — `rsyslog` configuration for log aggregation
-- **Resource Limits** — `ulimit` tuning to prevent resource exhaustion
+- **User Management** = 1,300 provisioned Linux user accounts
+- **SSH Hardening** = Public key authentication enforced, password login disabled
+- **PKI Infrastructure** = Custom Root CA for issuing and validating internal TLS certificates
+- **Apache Virtual Host** = Isolated site configuration on a dedicated port
+- **Nginx Virtual Host** = Isolated site configuration on a dedicated port
+- **HTTPS Enforcement** = TLS-secured endpoint backed by the internal Root CA
+- **Load Balancing** = HAProxy distributing requests across Apache and Nginx backends
+- **Auditing** = `auditd` rules for tracking security-relevant system events
+- **Centralized Logging** = `rsyslog` configuration for log aggregation
+- **Resource Limits** = `ulimit` tuning to prevent resource exhaustion
 
 ## Validation
 
@@ -82,7 +82,3 @@ sudo auditctl -l
 ├── audit/
 └── README.md
 ```
-
-## License
-
-> Specify a license if applicable.
